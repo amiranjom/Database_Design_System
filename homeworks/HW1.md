@@ -1,3 +1,8 @@
+# Instructor Comments (ERD only)
+
+in general a good one. I am not sure if the bold relations in your diagram means that they will become a table. If that is the case, then you need to modify it because in a one-to-many or many-to-one the relation is not going to be a table. If thee bold relation means something else, then no need to modify the ERD, and you can use it for your final version.
+
+
 # The Semantic-Conceptual Model 
 
 In this homework, students will learn to design a database system from a concept based on use cases, bussines rules (database requeriments), and Entity Relation Diagrams (ERD). 
