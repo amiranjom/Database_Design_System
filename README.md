@@ -1,14 +1,14 @@
 # CSC675-775 Section 03 Database Systems Spring 2020
 Welcome to Database Systems!. Please modify this README file with the following info: 
 
-1. Your name, and student id here
+1. Amir R. Anjomshoaa, 918710278
 
 2. Update this table of assignments. Set to done after one of the assignments is completed:
 
 
 | Assignment               | Completed     |
 | ------------------------ | ------------- |
-| Conceptual Model         | not done yet  |
+| Conceptual Model         | Done          |
 | Relational Model         | not done yet  |
 | Indexing                 | not done yet  |
 | Course Project           | not done yet  |
