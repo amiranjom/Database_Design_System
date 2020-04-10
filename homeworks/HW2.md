@@ -1,3 +1,10 @@
+# Grade
+
+```
+See Professor
+```
+Missing Done/Completed on ReadMe
+
 # The Relational Model 
 
 The relational model represents how data is storaged in databases based in a conceptual design (ERD). In this homework you will create the database model based in your ERD. 
