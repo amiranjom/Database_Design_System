@@ -3,7 +3,8 @@
 ```
 See Professor
 ```
-Missing Done/Completed on ReadMe
+1. Missing Done/Completed on ReadMe. Next time be more careful and follow guidelines.  -5 
+
 
 # The Relational Model 
 
