@@ -1,9 +1,18 @@
 # Grade
 
 ```
-See Professor
+65 points. 
 ```
 1. Missing Done/Completed on ReadMe. Next time be more careful and follow guidelines.  -5 
+2. Document not completed, read the doc guidelines below and you'll see why: -10 
+3. Testing table section (the most important) is not testing all your database model -10
+4. Error in testing script: 14:44:42	UPDATE `barber` SET `email` = 'pedroo@pedro.com' WHERE (`email` = 'pedro@pedro.com')	Error Code: 1217. Cannot delete or update a parent row: a foreign key constraint fails	0.0013 sec
+Errors must be commented out in this file 
+   In addition, my testing scripts failed in many of your database model relations. -10
+
+
+Amir, I can clearly see that you did not put in this HW the work and time it deserves. At least in the testing part, which is the most important part of this homework. 
+
 
 
 # The Relational Model 
