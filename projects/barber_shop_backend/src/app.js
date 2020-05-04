@@ -4,6 +4,7 @@ var apiRoutes = require('./routes/ApiRoutes')
 var path = require('path')
 var app = express();
 const port = 8000
+
 app.use(express.static(path.join(__dirname,'/build')));
 app.use(logger('dev'));
 app.use(express.json());
@@ -19,9 +20,9 @@ app.get('/test', (req,res) => {
 })
 
 
-// app.get('*',(req,res) => {
-//     res.sendFile(path.join(__dirname,'/build/index.html'));
-// })
+app.get('*',(req,res) => {
+    res.sendFile(path.join(__dirname,'/build/index.html'));
+})
 
 app.use(function(err, req, res, next) {
     // set locals, only providing error in development
