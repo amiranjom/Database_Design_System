@@ -1,0 +1,10 @@
+
+> barber_shop_backend@1.0.0 start /mnt/c/Users/Amir R. Anjomshoaa/Documents/2020 School Year/CSC 675/csc675-775-03-database-systems-spring-2020-amiranjom/projects/barber_shop_backend
+> nodemon src/app.js
+
+[33m[nodemon] 2.0.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+Listening on port 8000

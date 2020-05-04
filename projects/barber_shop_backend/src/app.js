@@ -1,20 +1,42 @@
 var express = require('express')
-var bodyParser = require('body-parser');
-var path = require('path')
+var logger = require('morgan');
 var apiRoutes = require('./routes/ApiRoutes')
-
+var path = require('path')
 var app = express();
-
+const port = 8000
 app.use(express.static(path.join(__dirname,'/build')));
-app.use(bodyParser.json());
+app.use(logger('dev'));
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: false }));
+
 
 app.use('/api', apiRoutes)
 
-app.get('*',(req,res) => {
-    res.sendFile(path.join(__dirname,'/build/index.html'));
+
+app.get('/test', (req,res) => {
+    res.send("OK")
 })
 
-app.listen(8000, () => console.log(`Listening on port 8000`))
+
+// app.get('*',(req,res) => {
+//     res.sendFile(path.join(__dirname,'/build/index.html'));
+// })
+
+app.use(function(err, req, res, next) {
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+  
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
+  });
+
+
+
+
+app.listen(port, () => console.log(`Listening on port ${port}`))
 
 
 

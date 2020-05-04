@@ -16,6 +16,13 @@ h1{
   top: 100px;
 }
 
+.center {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-barber {
   Position:relative;
   right: 300px;

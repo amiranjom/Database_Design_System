@@ -5,18 +5,22 @@ import {
   Switch,
 }from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import BarberSignUp from './pages/BarberSignUp'
+import BarberSignUp from './components/BarberSignUp';
+import BarberProfilePage from './pages/BarberProfilePage';
 import './App.css';
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <Router>
-
+        <Navbar/>
         <div className="App">
           <div id="page-body">
             <Switch>
               <Route path="/" component={HomePage} exact />
               <Route path="/barber-signup" component={BarberSignUp} />
+              
+              <Route path="/barber-profile" component={BarberProfilePage} />
             </Switch>
           </div>
          
