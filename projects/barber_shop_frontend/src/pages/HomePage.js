@@ -3,6 +3,7 @@ import {AwesomeButton } from 'react-awesome-button';
 import "react-awesome-button/dist/styles.css";
 import {Modal, Image, Container, Row, Col} from 'react-bootstrap';
 import Login from '../components/Login';
+import AdminLogin from '../components/AdminLogin'
 import BarberSignUp from '../components/BarberSignUp';
 import BarberScheduleInit from '../components/BarberScheduleInit';
 import bar from '../media/Bar.png';
@@ -71,7 +72,7 @@ const HomePage = () => {
             <Modal.Header closeButton>
             <Modal.Title>Admin Login</Modal.Title>
             </Modal.Header>
-            <Modal.Body><Login/></Modal.Body>
+            <Modal.Body><AdminLogin/></Modal.Body>
         </Modal>
 
         

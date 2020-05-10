@@ -1,7 +1,7 @@
 const express = require('express')
 const session = require('express-session')
 
-const {barberSignup, login ,deleteAccount ,barberProfile, updateSchedule ,barberScheduleInit, getLocation, addBarberType} = require('../db_Fetch/barber')
+const {searchResult,barberSignup, login ,deleteAccount ,barberProfile, updateSchedule ,barberScheduleInit, getLocation, addBarberType} = require('../db_Fetch/barber')
 
 const router = express.Router()
 
@@ -25,10 +25,9 @@ router.post('/barber-signup', async (req,res)=>{
 
 router.post('/barber-schedule-init' , async (req,res) => {
     try{
-        const email = req.session.barberEmail;
+    const email = req.session.barberEmail;
     req.session.type = req.body.barberType
     let result = await barberScheduleInit(req.body,email)
-    console.log(req.session)
     //TODO Function check the type and add to according db table.
     await addBarberType(req.body,email)
     res.send(result)
@@ -46,8 +45,12 @@ router.get('/store-locations', async (req,res) => {
 router.get('/barber-profile', async (req,res) => {
     const email = req.session.barberEmail;
     const type = req.session.type
+    try{
     let result = await barberProfile(email,type)
     res.send(result)
+    }catch(e){
+        res.send()
+    }
 })
 
 
@@ -62,6 +65,13 @@ router.post('/login', async (req,res) => {
         res.send("Wrong Password")
     }
 })
+
+router.get('/logout', (req,res) => {
+    req.session.destroy()
+    console.log(req.session)
+    res.send("Ok")
+})
+
 
 router.post('/update-schedule',async(req,res) => {
    try{
@@ -82,5 +92,21 @@ router.post('/delete-account', async(req,res) => {
         console.log(e)
     }
 })
+
+router.post('/search-result', async(req,res) => {
+    try{
+        console.log("here")
+        console.log(req.body)
+        let result = await searchResult(req.body)
+        console.log(result)
+        res.send(result)
+
+    }catch(e){
+        console.log(e)
+    }
+})
+
+
+
 
 module.exports = router;

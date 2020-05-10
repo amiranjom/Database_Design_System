@@ -26,11 +26,11 @@ const barberSignup =  (info) => {
                 let value = [[info.email,info.firstName,info.lastName,password]];
                 connection.query(sql,[value],(error,result) => {
                     if(error) {
-                        reject({Error: "Username Taken"})
+                        reject({error: "Username Taken"})
                     }
                     else {
                         connection.end()
-                        resolve({Success: true})
+                        resolve({success: true})
                     }
                 })
             }
@@ -48,14 +48,14 @@ const barberScheduleInit = (info,email) => {
 
             else {
                 let sql = "insert into schedule (barberEmail,days,times) values ?";
-                let value = [[email,info.days.toString(),info.timePeriod]];
+                let value = [[email,info.days.toString(),info.time]];
                 connection.query(sql,[value],(error,result) => {
                     if(error) {
-                        reject({Error: "Username Taken"})
+                        reject({error: "Fill Out All The Parts"})
                     }
                     else {
                         connection.end()
-                        resolve({Success: true})
+                        resolve({success: true})
                     }
                 })
             }
@@ -86,6 +86,43 @@ const getLocation = () => {
         })        
     })
 }
+
+
+
+
+const searchResult = (info) => {
+    return new Promise((resolve,reject) => {
+        let connection = initConnect()
+        connection.connect(async (e) => {
+            if(e) {
+                console.log(e)
+                reject({Error: e})}
+
+            else {
+               
+                let sql = `select * from barber join schedule on barber.firstName like "${info.searchValue}%" and schedule.barberEmail = barber.email;`;
+                connection.query(sql,(error,result) => {
+                    if(error) {
+                        console.log(error)
+                        reject({Error: "error"})
+                    }
+                    else {
+                        connection.end()
+                        resolve(result)
+                    }
+                })
+            }
+        })        
+    })
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -129,7 +166,7 @@ const updateSchedule = (info) => {
 
             else {
                 //UPDATE schedule SET days = 'Monday,Saturday,Sunday', times = '9-19' WHERE (barberEmail = 'ada@asdaa.com');
-                let sql = `UPDATE schedule SET days = '${info.days.toString()}', times = '${info.timePeriod}' WHERE (barberEmail = '${info.email}')`;
+                let sql = `UPDATE schedule SET days = '${info.days.toString()}', times = '${info.time}' WHERE (barberEmail = '${info.email}')`;
                 connection.query(sql,(error,result) => {
                     if(error) {
                         console.log(error)
@@ -212,6 +249,18 @@ const barberProfile = (email,type) => {
                         resolve(result)
                     }
                 })
+                }else{
+                    let sql = `select * from barber join schedule on barber.email = "${email}" and schedule.barberEmail = barber.email join travelworker on travelworker.barberEmail = barber.email`;
+                    //select * from barber join schedule on barber.email="rkisog@yahoo.com" and schedule.barberEmail = barber.email join storeworker on storeworker.barberEmail = barber.email join location on location.id = storeworker.locationId
+                    connection.query(sql,(error,result) => {
+                        if(error) {
+                            reject({Error: error})
+                        }
+                        else {
+                            connection.end()
+                            resolve(result)
+                        }
+                    })  
                 }
                 
             }
@@ -271,3 +320,4 @@ module.exports.updateSchedule = updateSchedule;
 
 module.exports.deleteAccount = deleteAccount;
 module.exports.login = login;
+module.exports.searchResult = searchResult;

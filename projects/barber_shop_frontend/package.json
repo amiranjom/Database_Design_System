@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-awesome-button": "^6.5.1",
     "react-bootstrap": "^1.0.1",
+    "react-bootstrap-icons": "^1.0.1-alpha3",
     "react-bootstrap-time-picker": "^2.0.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
