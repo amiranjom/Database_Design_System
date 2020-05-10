@@ -40,7 +40,6 @@ CREATE TABLE `appointments` (
 
 LOCK TABLES `appointments` WRITE;
 /*!40000 ALTER TABLE `appointments` DISABLE KEYS */;
-INSERT INTO `appointments` VALUES ('jack@sfsu.com','2020-03-09 18:00:00',1),('rkisog@sfsu.com','2020-03-11 19:00:00',2),('shane@shane.com','2020-03-05 13:30:00',3);
 /*!40000 ALTER TABLE `appointments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -93,7 +92,7 @@ CREATE TABLE `barber` (
 
 LOCK TABLES `barber` WRITE;
 /*!40000 ALTER TABLE `barber` DISABLE KEYS */;
-INSERT INTO `barber` VALUES ('aa@saa.com','lala','lalal','$2a$04$exchhSTs/iUQzrJGcPnFpewCT7W0HE.iv1azmuSQEzYLKiVc2SVnm'),('aasad@asda.com','lala','lala','$2a$04$CGI8BAB8XPBkwrgEtDx5MeACmbUQb75bznjv05IibM2mSRwPBOVBC'),('ada@adass.com','llala','ada','$2a$04$w7TFQiTrfiWBRbs8uBRjsulIkjrrh8Z1uyD765eXk4PN8a6yApcc6'),('ada@asdaa.com','lalal','akam','$2a$04$oi74QoDJi6JijgdNpWIZ5O9exkZyIGAOrEMxDoVjjni7H/jURwD6q'),('alala@adaa.com','alal','alal','$2a$04$oMqz95SvpwroWfJjSSXJU.We.USMfqwZheUs/W2kMykkd4pTnZDQG'),('amir@amir.com','akka','aaa','$2a$04$5/b37bJ1dTYqLleraczS6uwNqMpmz8mQ.4DV39MtsY8tUzwHguUJ2'),('amirr@amir.com','oaka','kakka','$2a$04$YWzLdprbTdGj.ChGQhO7lO3f43ByukMggP1NNZ5vGqS.qhES8qdqS'),('asldal@smms.com','lalal','lalal','$2a$04$i1e5oCD47mbRRL09oCJOhewsXTpXT5ze/T56a5Za9kIt5y7zPzVBa'),('aww@sa.com','kak','akak','$2a$04$1EulkYPoBaG6hkkicb6sQeDtyt4YykVqVm.gyPA7icDBTnqnixy72'),('da@aac.com','lalal','aiia','$2a$04$1LKlpfWT6TrRfkD8E/S0/eMvV9xhk6V0WcQXt5VVcY0g2Fxwt659W'),('dada@ad.com','lalald','adad','$2a$04$XtpQIE3/e/v/rXc/FXcjhOmBCMrCdUifbzLIuRkVsJjCJdKnF.sSi'),('ed@sfsu.com','Ed','Khan','password'),('iisaid2ada@sac.com','lal','kaksd','$2a$04$0e/YL.uX7T8Z4.q3.broq.uZZOvaiDk/tYmPr4i5Cp.baDKX6NkDe'),('is2a@ss.com','isia','sia','$2a$04$itmGyPjs1chph21l0PlJoeoSAjoEE.TUJxQhQl2sLoE7mKmNrJQc.'),('jack@jack.com','Kate','jack','$2a$04$.oyqRW6vo7hOozMyklKuMObGErA7nmFiBozcxszsHB/1eirJOdabS'),('jack@jackkkkk.com','jack','jack','$2a$04$ihXJXGPizOw3VHl5c1M3p.l/kEkNwAt48S/8yhxeFH1ScL3aeaUyG'),('jacko@j.com','jackob','jackob','$2a$04$RI7OG/l.1mOAMscajF61teSxAl4tAKBlHRcqDsUDXw4IuLMW1BJGa'),('jacksss@oo.com','jackie','johnson','$2a$04$Vnd1OC9yks8Gf5TGXpdmn.GBQ6nk0jnR/xJd52iDrMobR/Udwctf2'),('jorge@sfsu.com','Jorge','Wade','password'),('kadkak@adcom.com','kakdk','kakdak','$2a$04$NHG52JVpEYWWEw42TOEvFOedculnBMcfQyN3DNMgs7Ou94J7Xdpe.'),('kjak@ada.com','lalal','laa','$2a$04$2u2Z0Aym59lsAG7LVlwugO4E5enYLKuf6qHWOYHGFdZPkn6O4.Ezq'),('lalala@aa.com','llsa','lala','$2a$04$IUwELJMmn9DwVolphDnuoO21T4crEeB82Q3uaOlM6u2XfeWqj0l3q'),('lll22@sa.com','lalal','allal','$2a$04$G7MOqpr8GPZV6P8LhGExeuehhIrk6gc.RYEi8fukighUYrmGVFYj6'),('pedro@pedro.com','Pedro','Jan','password'),('reza@reza.com','reza','reza','$2a$04$Kc0X5e3urAhDGt7quqMJ2uZRl48QzFm9IiAjtF8rhSIbE6E6rfk62'),('reza@rezazz.com','Reza','Anjomshoaa','$2a$04$9kvQPk8gFmuGs/IrnmcpouCffwewLd.E0eRoXrFizYw05HQhcsENG'),('rkisog@yahoo.com','Amir','Reza','$2a$04$NN/pvpJd8sWVbt/Dnt.Fy.zJRIRvj6wmBDo9JzPX2qijWPSL3DTMS'),('sad2sd@ada.com','JKoashq','pj','$2a$04$iW7wmHxh7Wum5wx53XseC.Ue.1OlvgbvHcn3rtcedl5wDPvnqg5nG'),('ssskaa@asdod.com','Howday','Boooou','$2a$04$FEvTHnVwzLvxDWj5ptMyqe0rc2FWchYk5kDmTGmoGImvveyX5s68a');
+INSERT INTO `barber` VALUES ('amir@anjom.com','Amir','Anjomshoaa','$2a$04$vLWKbVBOld1wsErz/DVgmupiSxwIK2pTcixRXTt.2LFlxgN0GnM9q'),('jackson@barber.com','Amir','Jackson','$2a$04$sM7iCAH9bKEfY825ShDjh.TxULUTfHcKKk3Otk1tV712Oqzh2KM26'),('jose@ortiz.com','Jose ','Ortiz','$2a$04$hxS4um0d2PuSgbaZejwMUOTfK2u7J.C3dcUmvGTE52iWNxTVycNK.'),('pedii@barber.com','pedro','roger','$2a$04$3z8wQQolLkVSF41Itp5/ju.lfsMwokTqg7bu4zm16DDy3nvTRK752');
 /*!40000 ALTER TABLE `barber` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -123,7 +122,6 @@ CREATE TABLE `booking` (
 
 LOCK TABLES `booking` WRITE;
 /*!40000 ALTER TABLE `booking` DISABLE KEYS */;
-INSERT INTO `booking` VALUES (1,'jack@sfsu.com','jorge@sfsu.com','2020-03-06 19:00:00'),(2,'rkisog@sfsu.com','jorge@sfsu.com','2020-03-11 19:00:00'),(3,'shane@shane.com','pedro@pedro.com','2020-03-05 13:30:00');
 /*!40000 ALTER TABLE `booking` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -149,7 +147,6 @@ CREATE TABLE `directdeposit` (
 
 LOCK TABLES `directdeposit` WRITE;
 /*!40000 ALTER TABLE `directdeposit` DISABLE KEYS */;
-INSERT INTO `directdeposit` VALUES ('ed@sfsu.com','2522262554','2020-06-01'),('jorge@sfsu.com','2144256688','2020-05-13'),('pedro@pedro.com','1555668849','2020-05-16');
 /*!40000 ALTER TABLE `directdeposit` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -212,7 +209,6 @@ CREATE TABLE `payment` (
 
 LOCK TABLES `payment` WRITE;
 /*!40000 ALTER TABLE `payment` DISABLE KEYS */;
-INSERT INTO `payment` VALUES (1,'jack@sfsu.com','jorge@sfsu.com',1,25,'2020-03-06 19:00:00'),(2,'rkisog@sfsu.com','jorge@sfsu.com',3,50,'2020-03-06 19:00:00'),(3,'shane@shane.com','pedro@pedro.com',2,35,'2020-03-06 19:00:00');
 /*!40000 ALTER TABLE `payment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -242,7 +238,6 @@ CREATE TABLE `review` (
 
 LOCK TABLES `review` WRITE;
 /*!40000 ALTER TABLE `review` DISABLE KEYS */;
-INSERT INTO `review` VALUES ('jack@sfsu.com','ed@sfsu.com',5,'Perfect Job!!'),('rkisog@sfsu.com','jorge@sfsu.com',4,'Love my new hair'),('shane@shane.com','jorge@sfsu.com',4,'Amazing Service');
 /*!40000 ALTER TABLE `review` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -268,7 +263,7 @@ CREATE TABLE `schedule` (
 
 LOCK TABLES `schedule` WRITE;
 /*!40000 ALTER TABLE `schedule` DISABLE KEYS */;
-INSERT INTO `schedule` VALUES ('aa@saa.com','Thursday,Wednesday','9-22'),('aasad@asda.com','Wednesday,Thursday,Friday','12-22'),('ada@adass.com','Thursday,Friday,Saturday','12-22'),('ada@asdaa.com','Monday,Saturday,Sunday','9-19'),('amir@amir.com','Monday,Tuesday,Wednesday','14-22'),('amirr@amir.com','Thursday','11-22'),('da@aac.com','Wednesday,Thursday,Friday','15-22'),('dada@ad.com','Wednesday,Thursday,Friday','11-22'),('ed@sfsu.com','Mon,Tue,Fri','8:00 - 20:00'),('iisaid2ada@sac.com','Tuesday,Wednesday,Thursday','16-22'),('jack@jack.com','Monday,Tuesday,Friday','12-22'),('jack@jackkkkk.com','Wednesday,Friday','12-22'),('jacko@j.com','Thursday,Wednesday','12-22'),('jacksss@oo.com','Tuesday,Thursday','14-22'),('jorge@sfsu.com','Tue,Wed,Thur,Sun','7:00 - 18:00'),('kadkak@adcom.com','Thursday,Wednesday','12-22'),('kjak@ada.com','Monday,Wednesday','0'),('lalala@aa.com','Tuesday,Wednesday,Thursday','17-22'),('lll22@sa.com','Tuesday,Wednesday,Thursday','8-22'),('pedro@pedro.com','Mon,Tue,Sat','10:00 - 20:00'),('reza@reza.com','Monday,Tuesday,Wednesday','7-22'),('reza@rezazz.com','Wednesday,Thursday,Friday','10-22'),('rkisog@yahoo.com','Monday,Tuesday,Friday','10-22'),('sad2sd@ada.com','Monday,Tuesday,Wednesday','18-22'),('ssskaa@asdod.com','Thursday,Friday','14-22');
+INSERT INTO `schedule` VALUES ('amir@anjom.com','Tuesday,Wednesday,Thursday,Friday','13-17'),('jackson@barber.com','Monday,Tuesday,Wednesday,Saturday','9-17'),('jose@ortiz.com','Monday,Tuesday','15-22'),('pedii@barber.com','Monday,Thursday,Saturday','13-18');
 /*!40000 ALTER TABLE `schedule` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -312,7 +307,7 @@ CREATE TABLE `storeworker` (
   KEY `FkStoreLocationId_idx` (`locationId`),
   CONSTRAINT `FkStoreLocationId` FOREIGN KEY (`locationId`) REFERENCES `location` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FkStoreWorkerBarberEmail` FOREIGN KEY (`barberEmail`) REFERENCES `barber` (`email`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -321,7 +316,7 @@ CREATE TABLE `storeworker` (
 
 LOCK TABLES `storeworker` WRITE;
 /*!40000 ALTER TABLE `storeworker` DISABLE KEYS */;
-INSERT INTO `storeworker` VALUES (1,'ed@sfsu.com',1),(4,'rkisog@yahoo.com',1),(14,'aasad@asda.com',1),(15,'ada@adass.com',1),(17,'lalala@aa.com',1),(18,'kjak@ada.com',1),(21,'jacksss@oo.com',1),(2,'jorge@sfsu.com',2),(5,'amir@amir.com',2),(7,'reza@reza.com',2),(8,'jack@jack.com',2),(9,'reza@rezazz.com',2),(10,'jack@jackkkkk.com',2),(12,'lll22@sa.com',2),(16,'dada@ad.com',2),(19,'da@aac.com',2),(20,'iisaid2ada@sac.com',2),(22,'ssskaa@asdod.com',2),(3,'pedro@pedro.com',3),(11,'jacko@j.com',3),(13,'kadkak@adcom.com',3);
+INSERT INTO `storeworker` VALUES (36,'pedii@barber.com',1),(37,'jose@ortiz.com',1),(35,'amir@anjom.com',2);
 /*!40000 ALTER TABLE `storeworker` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -339,7 +334,7 @@ CREATE TABLE `travelworker` (
   PRIMARY KEY (`id`,`barberEmail`),
   KEY `FkStoreWorkerBarberEmail_idx` (`barberEmail`),
   CONSTRAINT `FkTravelWorkerBarberEmail0` FOREIGN KEY (`barberEmail`) REFERENCES `barber` (`email`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,7 +343,7 @@ CREATE TABLE `travelworker` (
 
 LOCK TABLES `travelworker` WRITE;
 /*!40000 ALTER TABLE `travelworker` DISABLE KEYS */;
-INSERT INTO `travelworker` VALUES (1,'ed@sfsu.com',50),(2,'jorge@sfsu.com',35),(3,'pedro@pedro.com',75),(4,'amirr@amir.com',50),(5,'aa@saa.com',50);
+INSERT INTO `travelworker` VALUES (8,'jackson@barber.com',50);
 /*!40000 ALTER TABLE `travelworker` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -387,4 +382,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-04 11:13:23
+-- Dump completed on 2020-05-09 19:12:35
