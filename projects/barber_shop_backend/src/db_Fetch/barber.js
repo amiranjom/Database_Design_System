@@ -12,6 +12,7 @@ const initConnect = () => {
     })
 )}
 
+
 const barberSignup =  (info) => {
     return new Promise((resolve,reject) => {
         let connection = initConnect()
@@ -22,10 +23,12 @@ const barberSignup =  (info) => {
 
             else {
                 let sql = "insert into barber (email,firstName,lastName,password) values ?";
+                let test = `insert into barber (email,firstName) values ('${info.email}', 'sd', 'das', 'sd');`
                 let password = await bcrypt.hash(info.password, 1)
                 let value = [[info.email,info.firstName,info.lastName,password]];
-                connection.query(sql,[value],(error,result) => {
+                connection.query(test,(error,result) => {
                     if(error) {
+                        print(error)
                         reject({error: "Username Taken"})
                     }
                     else {
