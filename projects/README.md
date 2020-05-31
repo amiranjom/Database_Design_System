@@ -2,9 +2,9 @@
 
 # Final Course Project Barber Shop
 
-**Full Stack** Web Application running on Google Cloud Platform
+**Full Stack** Web Application hosted on Google Cloud Platform
 <br>
-[Link to the Website](http://35.238.68.26/)
+
 
 
 
